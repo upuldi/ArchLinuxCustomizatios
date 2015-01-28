@@ -1,0 +1,12 @@
+systemd has its own logging system called the journal; therefore, running a syslog daemon is no longer required.
+
+journalctl -f -- New Logs 
+journalctl -b -- Logs after boot up
+journalctl - read systemctl log
+journalctl -b 2 - show all the messages from two boots ago
+journalctl --since="2012-10-30 18:17:16" - Show messages from a specific date
+journalctl --since "20 min ago" - Show messages from a specific time
+journalctl -f - Show new messages from now on
+journalctl /usr/lib/systemd/systemd - Show messages from a specific executable
+journalctl _PID=1 - Show messages by specific process
+journalctl -u netcfg - Show messages by specific unit

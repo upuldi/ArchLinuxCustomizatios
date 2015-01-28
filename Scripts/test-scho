@@ -1,0 +1,4 @@
+#!/bin/bash
+export ANT_ARGS='-logger org.apache.tools.ant.listener.AnsiColorLogger'
+
+#echo export ANT_ARGS=''-logger org.apache.tools.ant.listener.AnsiColorLogger''

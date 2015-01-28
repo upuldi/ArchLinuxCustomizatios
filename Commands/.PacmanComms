@@ -1,0 +1,12 @@
+pacman -Qi - Give information about installed packages
+pacsearch <package> - Search for packages
+pacman -Ql <package> - List all the files associated with the installed package
+pacman -Qlq <package> - Will also lists the files associated with a package but without the package name.
+pacman -Qql <package> | grep bin ⇒ this will display executables in bin folder
+sudo pacman -Sw <package> - Download the package without installing it
+sudo pacman -U <package_path> - Install a package from path or URL
+pacman -Qu ⇒ Display all the packages that need to be updated
+sudo pacman -Qen ⇒ Display after installed packages
+ 
+ls /var/cache/pacman/pkg | grep linux ⇒ Lists downloaded packages
+pacman -U <path_to_cached_file> ⇒ Downgrade to a specific downloaded package

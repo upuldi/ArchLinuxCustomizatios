@@ -1,0 +1,22 @@
+systemd is a system and service manager for Linux
+==================================================
+systemctl - List running units
+systemctl list-units - List running units
+systemctl --failed - List failled units
+systemctl list-unit-files - List unit files
+
+systemctl reload unit - Reload a unit
+systemctl is-enabled unit - Check availability
+systemctl help unit - Check manual page with a unit
+systemctl daemon-reload - Reload systemd, scanning for new or changed units:
+
+systemctl reboot
+systemctl poweroff
+systemctl suspend
+systemctl hibernate
+systemctl hybrid-sleep
+
+systemctl --state=failed - failed services
+
+systemctl --type=service --> To find currently running services
+

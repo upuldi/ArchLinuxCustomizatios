@@ -1,0 +1,3 @@
+lscpu - List CPU features
+grep -Ril "text-to-find-here" / ==> to search string in files [R-Recursive,i-ignore-case,L-show the file name]
+sudo netstat -tulpn ==> Displays ports used by processers
