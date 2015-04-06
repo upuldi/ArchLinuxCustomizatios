@@ -6,45 +6,23 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
-#Terminal prompt colourization
+alias grep='grep --color=auto'
+alias std='stdoutisatty'
+alias rm='trash-put'
+
+
 PS1='[\u@\h \W]\$ '
-#PS1='\[\e[1;32m\][\u@\h \W]\$\[\e[0m\] '
 
+export EDITOR="geany"
 
-eval $(dircolors -b)
-
-#Set the output colouriser path cope-git
-export PATH=$(cope_path):$PATH
-
-# USe < | ccze -A > to colourise
 
 #Source highlight for less
 export LESSOPEN="| /usr/bin/source-highlight-esc.sh %s"
 export LESS='-R '
-export PATH=$HOME/local/bin:$PATH
+
 
 # SVN tweaks for svn - colured output
-source /home/udoluweera/Scripts/svn-tweaks
-
-alias grep='grep --color=auto'
-alias co='ccze -A'
-alias rm='trash-put'
-alias sl='subl'
-
-#settings for vimpager package
-export PAGER='vimpager'
-alias less=$PAGER
-
-alias rm=' timeout 3 rm -Iv --one-file-system'
-alias dm='killall conky && xrandr --auto --output VGA1 --mode 1920x1080 --right-of LVDS1 && sleep 3s && conky -c /home/udoluweera/conky-manager/themes/future_conky/config/conkyrc1 &'
-alias dmr='xrandr --auto --output VGA1 --mode  1920x1080 --left-of LVDS1'
-
-alias nmc='printf "\e[%sm%s\e[37m\n"' 
-#alias ant='ant -logger org.apache.tools.ant.listener.AnsiColorLogger'
-alias youtube-dl-a='youtube-dl --extract-audio --audio-format mp3'
-
-#PS1='[\u@\h \W]\$ '  # Default
-#PS1='\[\e[1;37m\][\u@\h \W]\$\[\e[0m\] '
+source ~/Scripts/svn-tweaks
 
 
 ## GIT SPECIFIC SETTINGS FROM GOOGLE #######################
@@ -72,6 +50,3 @@ source ~/Scripts/git-prompt.sh
 # export PS1="$purple\u$green\$(__git_ps1)$blue \W $ $reset"
 
 ## END OF GIT SPECIFIC THINGS ################ 
-
-
-
