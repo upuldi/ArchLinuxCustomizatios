@@ -1,4 +1,4 @@
-# ArchLinuxCustomizatios
+# ArchLinuxCustomizatios For ASUS UX 305 Ultrabook
 1. Add the openbox folder inside your .config folder
 2. Add the AppConfig folder inside your home folder
 3. Add the Commands folder inside your home folder and rename it to .Commands
