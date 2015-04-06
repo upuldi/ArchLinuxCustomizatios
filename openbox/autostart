@@ -1,38 +1,13 @@
-## Compositing
-#compton ~/.config/compton.conf &
-#(sleep 1s && pnmixer) &
-#(sleep 1s && numlockx) &
-#/usr/bin/synclient TouchpadOff=1 &
-
-(sleep 1s && /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 ) &
-(sleep 2s && nitrogen --restore) &
-#(sleep 3s && cmst) &
-
-(sleep 7s && tint2) &
-(sleep 4s && thunar --daemon) &
+(/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 ) &
+(nitrogen --restore) &
+(tint2) &
+(thunar --daemon) &
 (sleep 5s && xscreensaver -no-splash) &
-#(sleep 6s && conky -c ~/.conky/conkyrc) &
 (sleep 20s && rescuetime) &
-(sleep 4s && cbatticon &) &
-(sleep 9s && xinput set-prop 'SynPS/2 Synaptics TouchPad' 'Device Enabled' 0) &
-(sleep 4s && volwheel) &
-(sleep 12s && parcellite) &
-#(sleep 13s && compton --config  ~/.config/compton.conf -b) &
-(sleep 14s && numlockx) &
-(sleep 15s && orage  ) &
-(sleep 15.4s && orage -t ) &
-#(sleep 16s && nm-applet  ) &
-
-
-
- 
-
-#Conkey Manager Startup Script
-#conky -c "/home/udoluweera/conky-manager/themes/Gold&Grey/config/cpu" &
-#conky -c "/home/udoluweera/conky-manager/themes/Gold&Grey/config/disk" &
-#conky -c "/home/udoluweera/conky-manager/themes/Gold&Grey/config/mem" &
-#conky -c "/home/udoluweera/conky-manager/themes/Gold&Grey/config/net" &
-#conky -c "/home/udoluweera/conky-manager/themes/Gold&Grey/config/time" &
-
-#conky -c "/home/udoluweera/conky-manager/themes/4 & 2 core blue/config/conkyrc2core"
-conky -c "/home/udoluweera/conky-manager/themes/future_conky/config/conkyrc1"
+(cbatticon &) &
+(volwheel) &
+(parcellite) &
+nm-applet &
+orage &
+syndaemon -t -k -i 2 -d & #not yet supported but will work in future for touchpad disbling when typing
+conky -c "/home/udoluweera/.conkycolors/conkyrc2"
