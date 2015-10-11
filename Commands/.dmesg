@@ -3,5 +3,5 @@ dmesg (Display message or driver message) is a command which will show Kernel ri
 
 dmesg - Display all the devices drivers loaded in to kernel.
 dmesg | grep -i <> - Print messages related to specific driver
-
 dmesg -c - Clear dmesg logs from boot time to till that time.
+dmesg -t | grep -i 'error\|warn\|exception' - To see errors warnings and exceptions
