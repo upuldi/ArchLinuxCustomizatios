@@ -1,13 +1,18 @@
-(/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 ) &
-(nitrogen --restore) &
-(tint2) &
-(thunar --daemon) &
-(sleep 5s && xscreensaver -no-splash) &
-(sleep 20s && rescuetime) &
-(cbatticon &) &
-(volwheel) &
-(parcellite) &
-nm-applet &
-orage &
-syndaemon -t -k -i 2 -d & #not yet supported but will work in future for touchpad disbling when typing
-conky -c "/home/udoluweera/.conkycolors/conkyrc2"
+thunar --daemon &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+/usr/lib/notification-daemon-1.0/notification-daemon &
+python2-notify &
+(sleep 1s && nitrogen --restore) &
+(sleep 1s && tint2) &
+(sleep 1s && xscreensaver -no-splash) &
+(sleep 1s && batterymon &) & 
+(sleep 3s && xinput set-prop 'SynPS/2 Synaptics TouchPad' 'Device Enabled' 0) &
+(sleep 3s && volwheel) &
+(sleep 3s && parcellite) &
+(sleep 5s && orage  ) &
+(sleep 5.4s && orage -t ) &
+(sleep 6s && workrave) &
+#(sleep 16s && nm-applet  ) &
+
+
+conky -c "/home/udoluweera/conky-manager/themes/future_conky/config/conkyrc1"
