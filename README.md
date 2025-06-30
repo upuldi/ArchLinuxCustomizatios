@@ -20,8 +20,7 @@ ENJOY.
 
 ---
 
-## 📸 Preview
-
+## 📸 Preview - KDE Plasma MacOS look and feel.
 ![Desktop Screenshot](screenshots/1.png)
 ![Desktop Screenshot](screenshots/2.png)
 ![Desktop Screenshot](screenshots/3.png)
