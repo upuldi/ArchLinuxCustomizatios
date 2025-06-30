@@ -27,3 +27,5 @@ ENJOY.
 ![Desktop Screenshot](screenshots/3.png)
 ![Desktop Screenshot](screenshots/4.png)
 ![Desktop Screenshot](screenshots/5.png)
+![Desktop Screenshot](screenshots/6.png)
+![Desktop Screenshot](screenshots/7.png)
