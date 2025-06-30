@@ -1,15 +1,29 @@
-# ArchLinuxCustomizatios
-1. Add the openbox folder inside your .config folder
-2. Add the AppConfig folder inside your home folder
-3. Add the Commands folder inside your home folder and rename it to .Commands
-4. Add the Scripts folder into your home folder.
+## Arch Linux Customizations
 
-These changes will give you a menue and pre-defined configs to your openbox environment.
+1.Copy the openbox folder into your .config directory.
+2.Place the AppConfig folder in your home directory.
+3.Move the Commands folder to your home directory and rename it to .Commands.
+4. Add the Scripts folder to your home directory.
 
-Command folder contains some commands which you can use with in bash. So you dont want to remember linux commands. To dispay those
-use cat .Commands/SomeCommandFile instead.
+These changes will set up a pre-configured menu and environment for your Openbox setup.
 
-Scripts folder contains some scripts you can use.
-
+The .Commands folder contains useful bash command snippets, so you don’t need to memorize them. To view any command, simply run:
+```
+bash
+Copy
+Edit
+cat ~/.Commands/SomeCommandFile
+```
+The Scripts folder includes a collection of helpful scripts for everyday tasks.
 
 ENJOY.
+
+---
+
+## 📸 Preview
+
+![Desktop Screenshot](screenshots/1.png)
+![Desktop Screenshot](screenshots/2.png)
+![Desktop Screenshot](screenshots/3.png)
+![Desktop Screenshot](screenshots/4.png)
+![Desktop Screenshot](screenshots/5.png)
